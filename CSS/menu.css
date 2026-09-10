@@ -1,0 +1,140 @@
+
+                                        /* MENU HERO */
+
+
+.menu-section,
+.custom-orders {
+  padding-block: var(--space-lg);
+}
+
+.menu-hero {
+  background-color: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+}
+
+.menu-hero .section-title {
+  color: var(--color-primary);
+  font-size: var(--fs-h2);
+  margin-bottom: var(--space-md);
+}
+
+.hero-doodle {
+  position: absolute;
+  width: 3rem;
+  opacity: 0.6;
+  pointer-events: none;
+  animation: doodle-float 4s ease-in-out infinite;
+}
+
+.doodle-1 { top: 8%;  left: 6%;  }
+.doodle-2 { top: 8%; right: 5%; }
+.doodle-3 { top: 40%; left: 16%; }
+.doodle-4 { bottom: 4%; left: 20%; }
+.doodle-5 { bottom: 8%; right: 24%; }
+.doodle-6 { top: 42%; right: 15%; }
+.doodle-7 { top: 65%; left: 3%; }
+.doodle-8 { top: 72%; right: 4%; }
+
+
+@keyframes doodle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+
+                                    /*  MENU NAVIGATION  */
+
+
+
+.menu-navigation {
+  position: sticky;
+
+  /* NOTE: this value should match the navbar's actual height —
+     currently based on .logo img height (5rem) in style.css.
+     If you resize the logo, update this value to match. */
+
+  top: 5.5rem;
+  
+  z-index: 900;
+  padding-block: var(--space-sm);
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-default);
+  box-shadow: 0 4px 12px rgba(58, 42, 36, 0.06);
+  margin-bottom: var(--space-md);
+}
+
+.menu-categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.menu-categories a {
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-lg);
+  color: var(--color-secondary);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  background-color: transparent;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.menu-categories a:hover {
+  background-color: var(--bg-secondary);
+  color: var(--accent-primary);
+}
+
+                                    /* CUSTOM ORDERS */
+
+
+.custom-orders {
+  background-color: var(--bg-secondary);
+  text-align: center;
+  margin-top: var(--space-lg);
+}
+
+.custom-orders-content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.custom-orders .section-label {
+  color: var(--accent-secondary);
+}
+
+.custom-orders h2 {
+  color: var(--color-primary);
+  font-size: var(--fs-h2);
+}
+
+.custom-orders p {
+  color: var(--color-secondary);
+}
+
+.order-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-block: var(--space-sm);
+}
+
+.order-tags span {
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--accent-secondary);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-primary);
+  color: var(--accent-secondary);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}

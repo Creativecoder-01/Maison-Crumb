@@ -1,0 +1,262 @@
+
+/* BREAKPOINT 1 — 980px | Tablet Landscape */
+
+@media (max-width: 980px) {
+
+  .navbar .btn {
+    display: none;
+  }
+
+  .doodle-1 { left: 10%;  }
+  .doodle-2 { top: 10%; right: 12%; }
+  .doodle-3 { display: none; }
+  .doodle-4 { left: 18%; }
+  .doodle-5 { bottom: 6%; right: 18%; }
+  .doodle-6 { display: none; }
+  .doodle-7 { top: 45%; left: 1%; }
+  .doodle-8 { top: 50%; right: 1%; }
+
+  
+.hero .container {
+    gap: var(--space-md);
+}
+
+  .hero-content {
+    padding: var(--space-md) var(--space-xs);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bakes-list {
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg)
+  }
+
+  .bakery-values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .moment-story {
+    grid-template-columns: 1fr;
+  }
+
+  .story-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .visit-details {
+   margin-bottom: var(--space-lg);
+}
+
+.footer {
+  padding-top: var(--space-lg);
+}
+
+.footer-content {
+    grid-template-columns: repeat(3, 1fr);
+     text-align: center;
+     gap: var(--space-md);
+  }
+
+  .footer-column {
+  margin-top: var(--space-lg);
+}
+
+  .footer-brand {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+
+/* BREAKPOINT 2 — 768px | Tablet Portrait */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR — hamburger takes over */
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    padding-block: 0;
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-default);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+  }
+
+  .nav-links.active {
+    max-height: 400px;
+    padding-block: var(--space-md);
+  }
+
+  .nav-links li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .hero .container {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-collage {
+    width: 100%;
+  }
+
+   .hero-doodle {
+    width: 2.25rem;
+  }
+
+.doodle-1 { top: 12%; left: 5%; }
+.doodle-2 { top: 15%; right: 6%; }
+.doodle-4 { left: 10%; }
+.doodle-5 { right: 12%; }
+.doodle-7 { left: 1%; }
+.doodle-8 { right: 1%; }
+
+
+  .featured-moment {
+    grid-template-columns: 1fr;
+  }
+
+  .moment-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .about .container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+
+  .about-img {
+    order: 2;
+    width: 90%;
+    margin: auto;
+  }
+
+  .featured-moment,
+  .moment-stories {
+    text-align: center;
+  }
+
+ .rating {
+    justify-content: center;
+  }
+
+ .visit-details {
+   margin-bottom: var(--space-xl);
+   gap: var(--space-xl);
+}
+
+.footer-content {
+  gap: var(--space-lg);
+}
+}
+
+
+/* BREAKPOINT 3 — 560px | Mobile */
+
+
+@media (max-width: 560px) {
+
+  .hero-content {
+    padding: var(--space-lg);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+ .menu-hero {
+  padding-block: var(--space-md);
+  margin-bottom: var(--space-md);
+ }
+
+  .hero-doodle {
+    width: 1.75rem;
+  }
+
+  .doodle-1 { left: 3%;  }
+  .doodle-2 { right: 2%; }
+  .doodle-4 { bottom: 10%; }
+  .doodle-5 { bottom: 14%; }
+  .doodle-7 { left: 0%; }
+  .doodle-8 { right: 0%; }
+
+
+  .bakes-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bakery-values {
+    grid-template-columns: 1fr;
+    margin-top: var(--space-xl);
+  }
+
+  .featured-moment {
+  margin-bottom: var(--space-lg);
+}
+
+  .moment-stories {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+.visit-details {
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+   margin-bottom: var(--space-lg);
+}
+
+.footer {
+          padding-top: var(--space-sm);
+}
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+}
