@@ -1,7 +1,6 @@
 
                                         /* MENU HERO */
 
-
 .menu-section,
 .custom-orders {
   padding-block: var(--space-lg);
@@ -88,6 +87,16 @@
   background-color: var(--bg-secondary);
   color: var(--accent-primary);
 }
+
+#breads,
+#croissants,
+#cakes,
+#pastries,
+#cookies,
+#coffee {
+  scroll-margin-top: 120px;
+}
+
 
                                     /* CUSTOM ORDERS */
 
