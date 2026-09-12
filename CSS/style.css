@@ -99,6 +99,15 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
 li {
   list-style: none;
 }
@@ -345,6 +354,16 @@ header {
   height: 100%;
   border-radius: var(--radius-lg);
   object-fit: cover;
+}
+
+.hero-collage .column img {
+  transition: var(--transition);
+}
+
+.hero-collage .column img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 8px rgba(58, 42, 36, 0.1);
+  cursor: pointer;
 }
 
 
